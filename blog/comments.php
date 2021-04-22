@@ -5,9 +5,7 @@
 ?>
 
 <div class="comments">
-	<?php 
-		if (have_comments()) : 
-	?>
+	<?php if (have_comments()) : ?>
 		
 		<h3 class="comments-title">
 			<?php
@@ -25,21 +23,15 @@
 			?>
 		</ul>
 
-	<?php 
-		endif;
-	?>
+	<?php endif; ?>
 
-	<?php
-		if (!comments_open() && get_comments_number() && post_type_supports(get_post_type(), 'comments')) : 
-	?>
+	<?php if (!comments_open() && get_comments_number() && post_type_supports(get_post_type(), 'comments')) : ?>
 		
 		<p class="no-comments">
 			<?php _e('Comments are closed.'); ?>
 		</p>
 
-	<?php
-		endif;
-	?>
+	<?php endif; ?>
 
 	<?php comment_form(); ?>
 </div>

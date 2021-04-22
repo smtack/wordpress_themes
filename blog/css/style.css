@@ -4,6 +4,11 @@
 	font-family: sans-serif;
 }
 
+.container {
+	width: 80%;
+	margin: auto;
+}
+
 p {
 	line-height: 1.5;
 }
@@ -47,8 +52,9 @@ ul li {
 }
 
 .posts {
-	width: 750px;
-	margin: 0 auto;
+	width: 60%;
+	margin: 50px 0;
+	float: left;
 }
 
 .post {
@@ -77,9 +83,38 @@ ul li {
 	margin-bottom: 10px;
 }
 
+.comments-link {
+	color: #818181;
+}
+
+.sidebar {
+	width: 35%;
+	min-height: 50vh;
+	margin: 50px 0;
+	box-sizing: border-box;
+	padding: 25px;
+	float: right;
+	border-left: 1px solid #d3d3d3;
+}
+
+.sidebar h2 {
+	text-align: center;
+}
+
+.sidebar ul {
+	text-align: center;
+	padding: 10px;
+}
+
+.archives {
+	margin-top: 50px;
+}
+
 .comments {
+	margin: 50px 0;
 	color: #818181;
 	text-decoration: none;
+	border-top: 1px solid #d3d3d3;
 }
 
 #prev {
@@ -215,8 +250,7 @@ ul li {
 
 .footer {
 	border-top: 1px solid #d3d3d3;
-	position: relative;
-	top: 100px;
+	clear: both;
 }
 
 .footer p {
@@ -228,12 +262,19 @@ ul li {
 
 @media (max-width: 1000px) {
 	.posts {
-		width: 90%;
+		width: 100%;
 		float: none;
 	}
 
+	.sidebar {
+		width: 100%;
+		float: none;
+		border-left: none;
+		border-top: 1px solid #d3d3d3;
+	}
+
 	.page {
-		width: 90%;
+		width: 100%;
 		float: none;
 	}
 }
