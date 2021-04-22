@@ -12,7 +12,7 @@
 	<p><?php the_excerpt('...'); ?></p>
 	
 	<p>
-		<a class="comments" href="<?php comments_link(); ?>">
+		<a class="comments-link" href="<?php comments_link(); ?>">
 			<?php printf(_nx('1 Comment', '%1$s Comments', get_comments_number(), 'comments title', 'textdomain'), number_format_i18n(get_comments_number())); ?>
 		</a>
 	</p>

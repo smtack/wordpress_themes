@@ -11,7 +11,8 @@
 	</head>
 
 	<body>
-		<div class="header">
-			<p class="heading"><a href="<?php bloginfo('wpurl'); ?>"><?php echo get_bloginfo('name'); ?></a></h1>
-			<p class="description"><?php echo get_bloginfo('description'); ?></p>
-		</div>
+		<div class="container">
+			<div class="header">
+				<p class="heading"><a href="<?php bloginfo('wpurl'); ?>"><?php echo get_bloginfo('name'); ?></a></h1>
+				<p class="description"><?php echo get_bloginfo('description'); ?></p>
+			</div>
