@@ -5,7 +5,7 @@
 }
 
 .container {
-	width: 80%;
+	width: 75%;
 	margin: auto;
 }
 
@@ -26,14 +26,8 @@ ul {
 	list-style: none;
 }
 
-ul li {
-	line-height: 1.5;
-}
-
 .header {
-	height: 150px;
 	margin: 0 auto;
-	display: block;
 	text-align: center;
 	border-bottom: 1px solid #d3d3d3;
 }
@@ -46,15 +40,56 @@ ul li {
 
 .description {
 	font-size: 18px;
+	font-style: italic;
 	padding: 10px 0;
 	color: #818181;
 	margin-bottom: 25px;
 }
 
-.posts {
+.navigation ul li a {
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.navigation ul li a:hover {
+	text-decoration: none;
+	color: #818181;
+}
+
+.search-form {
+	margin: 25px 0;
+}
+
+.search-field {
+	height: 40px;
+	width: 200px;
+	border: 1px solid #d3d3d3;
+	padding: 10px;
+}
+
+.search-field:focus {
+	border: 1px solid #000000;
+	outline: none;
+}
+
+.search-submit {
+	height: 40px;
+	border: 1px solid #000000;
+	background-color: #000000;
+	color: #ffffff;
+	padding: 10px;
+}
+
+.search-submit:hover {
+	cursor: pointer;
+	background-color: #ffffff;
+	color: #000000;
+}
+
+.posts,
+.page {
 	width: 60%;
-	margin: 50px 0;
-	float: left;
+	margin: 50px auto;
 }
 
 .post {
@@ -63,11 +98,12 @@ ul li {
 }
 
 .title {
-	font-size: 30px;
+	font-size: 28px;
 }
 
 .post h4 {
 	color: #818181;
+	font-size: 14px;
 	font-weight: normal;
 	padding: 10px 0;
 }
@@ -87,34 +123,24 @@ ul li {
 	color: #818181;
 }
 
-.sidebar {
-	width: 35%;
-	min-height: 50vh;
-	margin: 50px 0;
-	box-sizing: border-box;
-	padding: 25px;
-	float: right;
-	border-left: 1px solid #d3d3d3;
-}
-
-.sidebar h2 {
-	text-align: center;
-}
-
-.sidebar ul {
-	text-align: center;
-	padding: 10px;
-}
-
-.archives {
-	margin-top: 50px;
-}
-
 .comments {
 	margin: 50px 0;
 	color: #818181;
 	text-decoration: none;
 	border-top: 1px solid #d3d3d3;
+}
+
+#prev,
+#next {
+	margin: 10px 0;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+#prev a:hover,
+#next a:hover {
+	color: #818181;
+	text-decoration: none;
 }
 
 #prev {
@@ -123,11 +149,6 @@ ul li {
 
 #next {
 	float: right;
-}
-
-.page {
-	width: 750px;
-	margin: 0 auto;
 }
 
 .comments-title {
@@ -144,7 +165,8 @@ ul li {
 }
 
 .comment-body {
-	border-bottom: 1px solid #d3d3d3;
+	background-color: #fafafa;
+	padding: 10px;
 }
 
 .comment-author {
@@ -165,6 +187,7 @@ ul li {
 
 .reply a {
 	display: inline-block;
+	margin: 10px 0;
 }
 
 #respond {
@@ -249,8 +272,8 @@ ul li {
 }
 
 .footer {
-	border-top: 1px solid #d3d3d3;
 	clear: both;
+	border-top: 1px solid #d3d3d3;
 }
 
 .footer p {
@@ -261,20 +284,8 @@ ul li {
 }
 
 @media (max-width: 1000px) {
-	.posts {
-		width: 100%;
-		float: none;
-	}
-
-	.sidebar {
-		width: 100%;
-		float: none;
-		border-left: none;
-		border-top: 1px solid #d3d3d3;
-	}
-
+	.posts,
 	.page {
 		width: 100%;
-		float: none;
 	}
 }

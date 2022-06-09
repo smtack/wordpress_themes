@@ -8,15 +8,11 @@
 		?>
 
 		<ul class="pagination">
-			<li id="prev"><?php previous_posts_link('&#x2190; Newer Posts'); ?></li>
-			<li id="next"><?php next_posts_link('Older Posts &#x2192;'); ?></li>
+			<li id="next"><?php next_posts_link('Next &#x2192;'); ?></li>
+			<li id="prev"><?php previous_posts_link('&#x2190; Previous'); ?></li>
 		</ul>
-
-		<?php
-			endif;
-		?>
+		
+		<?php endif; ?>
 	</div>
-
-	<?php get_sidebar(); ?>
 
 <?php get_footer(); ?>
