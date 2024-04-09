@@ -12,13 +12,11 @@
 					<h1 class="heading"><a href="<?php bloginfo('wpurl'); ?>"><?php echo get_bloginfo('name'); ?></a></h1>
 					<p class="description"><?php echo get_bloginfo('description'); ?></p>
 				</div>
-				<div class="navigation">
+				<div class="nav">
 					<ul>
-						<?php
-							$pages = get_pages();
+						<?php $pages = get_pages(); ?>
 
-							foreach ($pages as $page):
-						?>
+						<?php foreach ($pages as $page): ?>
 							<li><a href="<?php echo get_page_link($page->ID); ?>"><?php echo $page->post_title; ?></a></li>
 						<?php endforeach; ?>
 					</ul>

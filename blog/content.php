@@ -9,7 +9,7 @@
 		} 
 	?>
 
-	<p><?php the_excerpt('...'); ?></p>
+	<p><?php the_excerpt(); ?></p>
 	
 	<p>
 		<a class="comments-link" href="<?php comments_link(); ?>">

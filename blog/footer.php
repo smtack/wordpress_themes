@@ -20,6 +20,7 @@
 						<?php wp_get_archives('type=yearly'); ?>
 					</ul>
 				</div>
+				
 				<p>&copy; <?php echo get_bloginfo('name'); ?> <?php echo date('Y'); ?></p>
 			</div>
 

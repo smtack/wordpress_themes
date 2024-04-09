@@ -6,7 +6,7 @@
 
 <div class="comments">
 	<?php if (have_comments()): ?>
-		<h3 class="comments-title"><?php printf(_nx('1 Comment', '%1$s Comments', get_comments_number(), 'comments title'), number_format_i18n(get_comments_number()), get_the_title()); ?></h3>
+		<h3 class="comments-title"><?php printf(_nx('1 Comment', '%1$s Comments', get_comments_number(), 'comments title', 'textdomain'), number_format_i18n(get_comments_number()), get_the_title()); ?></h3>
 
 		<ul class="comments-list">
 			<?php
@@ -16,6 +16,8 @@
 				));
 			?>
 		</ul>
+	<?php else: ?>
+		<h3 class="comments-title">No Comments</h3>
 	<?php endif; ?>
 
 	<?php if (!comments_open() && get_comments_number() && post_type_supports(get_post_type(), 'comments')) : ?>
