@@ -1,7 +1,7 @@
 * {
 	margin: 0;
 	padding: 0;
-	font-family: 'Work Sans', sans-serif;
+	font-family: "Inter", Helvetica, Arial, sans-serif;
 }
 
 .container {
@@ -28,7 +28,6 @@ ul {
 
 .header {
 	margin: 0 auto;
-	border-bottom: 1px solid #d3d3d3;
 	overflow: hidden;
 }
 
@@ -37,22 +36,21 @@ ul {
 }
 
 .heading {
-	font-size: 40px;
+	font-size: 36px;
 	font-weight: bold;
 	padding: 10px 0;
 }
 
 .description {
-	font-size: 18px;
-	font-style: italic;
-	padding: 10px 0;
+	font-size: 16px;
+	padding: 5px 0;
 	color: #818181;
 	margin-bottom: 25px;
 }
 
 .navigation {
 	float: right;
-	padding: 50px 0;
+	padding: 25px 0;
 }
 
 .navigation ul li {
@@ -62,12 +60,6 @@ ul {
 
 .navigation ul li a {
 	font-weight: bold;
-	text-transform: uppercase;
-}
-
-.navigation ul li a:hover {
-	text-decoration: none;
-	color: #818181;
 }
 
 .posts,
@@ -108,6 +100,11 @@ ul {
 	margin-bottom: 10px;
 }
 
+figcaption {
+	background-color: #d3d3d3;
+	padding: 5px;
+}
+
 .comments-link {
 	color: #818181;
 }
@@ -117,19 +114,13 @@ ul {
 	color: #818181;
 	text-decoration: none;
 	border-top: 1px solid #d3d3d3;
+	clear: both;
 }
 
 #prev,
 #next {
 	margin: 10px 0;
-	text-transform: uppercase;
 	font-weight: bold;
-}
-
-#prev a:hover,
-#next a:hover {
-	color: #818181;
-	text-decoration: none;
 }
 
 #prev {
@@ -150,33 +141,40 @@ ul {
 }
 
 .comments-list li {
-	margin: 25px 0;
+	margin: 50px 0;
 }
 
-.comment-body {
-	background-color: #fafafa;
-	padding: 10px;
+.comment {
+	clear: both;
 }
 
-.comment-author {
+.comment-author a {
 	color: #000000;
-	display: block;
-	margin-bottom: 10px;
+	font-style: normal;
+}
+
+.comment-meta a {
+	font-size: 14px;
 }
 
 .comments-list img {
-	display: none;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
 }
 
 .comments-list p {
 	color: #000000;
 	margin: 25px 0;
-	display: block;
 }
 
-.reply a {
-	display: inline-block;
+.reply {
 	margin: 10px 0;
+	font-size: 14px;
+}
+
+.children {
+	margin-left: 25px;
 }
 
 #respond {
@@ -212,7 +210,7 @@ ul {
 	width: 100%;
 	height: 200px;
 	font-size: 16px;
-	padding: 5px;
+	padding: 10px;
 	margin: 10px 0;
 	border: 1px solid #d3d3d3;
 	resize: none;
@@ -260,6 +258,24 @@ ul {
 	outline: none;
 }
 
+.more h2 {
+	padding: 10px 0;
+}
+
+.more ul li {
+	border-bottom: 1px solid #d3d3d3;
+	padding: 25px 0;
+}
+
+#more-title {
+	font-size: 18px;
+}
+
+#more-date a {
+	float: right;
+	color: #818181;
+}
+
 .footer {
 	clear: both;
 	border-top: 1px solid #d3d3d3;
@@ -305,7 +321,6 @@ ul {
 
 .archive h4 {
 	margin: 10px 0;
-	text-transform: uppercase;
 }
 
 .archive ul li {
